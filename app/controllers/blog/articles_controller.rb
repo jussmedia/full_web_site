@@ -12,6 +12,8 @@ class Blog::ArticlesController < ApplicationController
   # GET /blog/articles/1
   # GET /blog/articles/1.json
   def show
+    @comment = Blog::Comment.new
+    @comment.article_id = @article.id
   end
 
   # GET /blog/articles/new

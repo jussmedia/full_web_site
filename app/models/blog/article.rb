@@ -1,4 +1,5 @@
 class Blog::Article < ActiveRecord::Base
+  has_many :comments
 end
 
 # == Schema Information
