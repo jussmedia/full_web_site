@@ -45,6 +45,12 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
+# SECURITY
+gem 'devise'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'omniauth-linkedin'
+gem 'omniauth-gplus'
 
 group :development do
   # annotates the models, fixtures, and test
