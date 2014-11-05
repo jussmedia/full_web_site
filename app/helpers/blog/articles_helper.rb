@@ -7,7 +7,7 @@ module Blog::ArticlesHelper
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def article_params
-    params.require(:blog_article).permit(:title, :body, :published, :tag_list)
+    params.require(:blog_article).permit(:title, :body, :published_by, :published, :tag_list)
   end
 
 end

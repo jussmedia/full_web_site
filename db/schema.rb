@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20141104212428) do
   create_table "blog_articles", force: true do |t|
     t.string   "title"
     t.text     "body"
+    t.string   "published_by"
     t.boolean  "published"
     t.datetime "created_at"
     t.datetime "updated_at"
