@@ -1,0 +1,9 @@
+<div class="post_info">
+  <div class="fleft">On <span><%= article.created_at.strftime('%d %b %Y')%></span> / By <%= link_to article.published_by, '#' %> /
+    Tags <% article.tags.each do |tag| %>
+      <%= link_to tag.name, blog_tag_path(tag) %>
+    <% end %>
+  </div>
+    <div class="fright"><%= link_to article.comments.count, blog_article_comments_path(article) %> Comments</div>
+  <div class="clear"></div>
+</div>

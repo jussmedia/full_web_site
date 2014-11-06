@@ -1,0 +1,73 @@
+body {
+  overflow-x: hidden;
+}
+
+.font {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  /*Normal*/
+  font-weight: 600;
+  /*Semi-Bold*/
+  font-weight: 700;
+  /*Bold*/
+  font-weight: 800;
+  /*Extra-Bold*/
+}
+
+.header {
+  padding: 36px 0 21px 0;
+  background: #fff;
+  border-top: 5px #d00b01 solid;
+}
+
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+.clear {
+  height: 0;
+  clear: both;
+  font-size: 0;
+}
+
+h2.title {
+  padding: 0;
+  margin: 0 0 19px 0;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #313131;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  a {
+    font-size: 21px;
+    color: #313131;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    &:hover {
+      color: #d00b01;
+      text-decoration: none;
+    }
+  }
+}
+
+a, input, select, textarea {
+  outline: none !important;
+}
+
+
+a {
+  color: #d00b01;
+  text-decoration: none;
+  &:hover {
+    color: #d00b01;
+    text-decoration: underline;
+  }
+  &:focus {
+    color: #d00b01;
+  }
+}

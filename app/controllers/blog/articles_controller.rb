@@ -1,7 +1,7 @@
 class Blog::ArticlesController < ApplicationController
   include Blog::ArticlesHelper
 
-  before_action :article, only: [:show, :edit, :update, :destroy]
+  before_action :current_article, only: [:show, :edit, :update, :destroy]
 
   # GET /blog/articles
   # GET /blog/articles.json
