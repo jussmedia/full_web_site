@@ -1,0 +1,14 @@
+<% comment.comments.each do | comment | %>
+<ul>
+  <li>
+    <div class="avatar"><a href="#"><img src="img/avatar2.jpg" width="68" height="68" alt="" /></a></div>
+    <div class="comment_right">
+      <div class="comment_right">
+        <%= render partial: 'comment_info', locals: {comment: comment} %>
+        <%= comment.body %>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </li>
+</ul>
+<% end %>
