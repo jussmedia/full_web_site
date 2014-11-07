@@ -1,4 +1,4 @@
-class Blog::TagsController < ApplicationController
+class Blog::TagsController < Blog::BaseController
   include Blog::TagsHelper
 
   before_action :current_tag, only: [:show, :edit, :update, :destroy]

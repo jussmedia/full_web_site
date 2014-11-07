@@ -1,6 +1,6 @@
-class Blog::CommentsController < ApplicationController
+class Blog::CommentsController < Blog::BaseController
   include Blog::CommentsHelper
-  
+
   def create
     @comment = Blog::Comment.new(comment_params)
     @comment.article_id = params[:article_id]

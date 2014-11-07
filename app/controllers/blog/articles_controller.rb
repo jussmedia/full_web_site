@@ -1,4 +1,4 @@
-class Blog::ArticlesController < ApplicationController
+class Blog::ArticlesController < Blog::BaseController
   include Blog::ArticlesHelper
 
   before_action :current_article, only: [:show, :edit, :update, :destroy]
