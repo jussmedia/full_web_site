@@ -1,0 +1,56 @@
+<div class="header">
+  <div class="wrap">
+  	<div class="navbar navbar_ clearfix">
+    	<div class="container">
+        <div class="row">
+          <div class="col-md-4">
+          	<div class="logo"><%= link_to image_tag('logo.png') %></div>
+          </div>
+          <div class="col-md-8">
+          	<div class="follow_us">
+              <ul>
+                <li><%= link_to "Facebook", 'http://fb.jussmedia.com', target: '_blank', class: 'facebook' %></li>
+                <li><%= link_to "Vimeo", 'http://vimeo.jussmedia.com', target: '_blank', class: 'vimeo' %></li>
+                <li><%= link_to "Tumblr", 'http://tumblr.jussmedia.com', target: '_blank', class: 'tumblr' %></li>
+                <li><%= link_to "Twitter", 'http://twitter.jussmedia.com', target: '_blank', class: 'twitter' %></li>
+              </ul>
+            </div>
+            <div class="clear"></div>
+            <nav id="main_menu">
+              <div class="menu_wrap">
+                <ul class="nav sf-menu">
+                  <li class="current"><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li class="sub-menu"><a href="javascript:{}">Features</a>
+                    <ul>
+                      <li><a href="scaffolding.html"><span>-</span>Scaffolding</a></li>
+                      <li><a href="typography.html"><span>-</span>Typography</a></li>
+                      <li><a href="shortcodes.html"><span>-</span>Shortcodes</a></li>
+                      <li><a href="tables.html"><span>-</span>Tables</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu"><a href="javascript:{}">Portfolio</a>
+                    <ul>
+                      <li><a href="portfolio_2columns.html"><span>-</span>2 Columns</a></li>
+                      <li><a href="portfolio_3columns.html"><span>-</span>3 Columns</a></li>
+                      <li><a href="portfolio_4columns.html"><span>-</span>4 Columns</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu"><%= link_to 'Blog', blog_path %>
+                   <ul>
+                     <li><a href="blog.html"><span>-</span>Blog with right sidebar</a></li>
+                     <li><a href="blog_post.html"><span>-</span>Blog post</a></li>
+                   </ul>
+                  </li>
+                  <li>
+                    <a href="contacts.html">Contacts</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
