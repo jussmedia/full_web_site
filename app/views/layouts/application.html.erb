@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SimpleApproach</title>
+  <title><%= yield(:title) || ('site_name') %></title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<p class="flash"><%= flash.notice %></p>
-<%= yield %>
+  <p class="flash"><%= flash.notice %></p>
+  <%= render partial: 'layouts/shared/header' %>
+  <!--page_container-->
+  <div class="page_container">
+    <%= yield %>
+  </div>
+  <!--//page_container-->
 
+  <%= render partial: 'layouts/shared/footer' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script>
+	$(document).ready(function(){
+			//Slider
+			$('#camera_wrap_1').camera();
+
+			//Featured works & latest posts
+			$('#mycarousel, #mycarousel2, #newscarousel').jcarousel();
+		});
+</script>
 </body>
 </html>

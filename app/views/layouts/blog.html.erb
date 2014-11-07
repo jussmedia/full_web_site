@@ -10,10 +10,10 @@
     <div class="container">
       <section>
       	<div class="row">
-        	<div class="span8">
+        	<div class="col-md-8">
             <%= yield :post %>
           </div>
-          <div class="span4">
+          <div class="col-md-4">
             <div class="sidebar">
               <%= yield :widgets %>
             </div>
@@ -23,3 +23,5 @@
     </div>
   </div>
 </div>
+
+<% parent_layout "application" %>
