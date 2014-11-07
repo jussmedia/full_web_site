@@ -12,5 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.prettyPhoto
+//= require jquery.jcarousel
+//= require jquery.tweet
 //= require turbolinks
 //= require bootstrap
+//= require camera
+//= require superfish
+//= require myscript
