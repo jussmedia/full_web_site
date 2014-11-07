@@ -3,11 +3,11 @@ class Blog::CommentsController < Blog::BaseController
 
   def create
     @comment = Blog::Comment.new(comment_params)
-    @comment.article_id = params[:article_id]
+    @comment.post_id = params[:post_id]
 
     @comment.save
 
-    redirect_to blog_article_path(@comment.article)
+    redirect_to blog_post_path(@comment.post)
   end
 
 end

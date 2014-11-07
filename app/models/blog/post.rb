@@ -1,4 +1,4 @@
-class Blog::Article < ActiveRecord::Base
+class Blog::Post < ActiveRecord::Base
   has_many :comments
   has_many :taggings
   has_many :tags, through: :taggings
@@ -17,7 +17,7 @@ end
 
 # == Schema Information
 #
-# Table name: blog_articles
+# Table name: blog_posts
 #
 #  id           :integer          not null, primary key
 #  title        :string(255)

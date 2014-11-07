@@ -1,16 +1,16 @@
 require "test_helper"
 
-describe Blog::Article do
-  let(:article) { Blog::Article.new }
+describe Blog::Post do
+  let(:post) { Blog::Post.new }
 
   it "must be valid" do
-    article.must_be :valid?
+    post.must_be :valid?
   end
 end
 
 # == Schema Information
 #
-# Table name: blog_articles
+# Table name: blog_posts
 #
 #  id           :integer          not null, primary key
 #  title        :string(255)

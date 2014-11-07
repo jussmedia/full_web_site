@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
 
   namespace :blog do
-    resources :articles do
+    resources :posts do
       resources :comments
     end
 
     resources :tags
 
     # Root for blog site
-    get '/' => 'articles#index'
+    get '/' => 'posts#index'
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

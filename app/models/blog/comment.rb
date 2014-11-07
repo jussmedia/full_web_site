@@ -1,5 +1,5 @@
 class Blog::Comment < ActiveRecord::Base
-  belongs_to :article
+  belongs_to :post
 end
 
 # == Schema Information
@@ -9,11 +9,11 @@ end
 #  id          :integer          not null, primary key
 #  author_name :string(255)
 #  body        :text
-#  article_id  :integer
+#  post_id     :integer
 #  created_at  :datetime
 #  updated_at  :datetime
 #
 # Indexes
 #
-#  index_blog_comments_on_article_id  (article_id)
+#  index_blog_comments_on_post_id  (post_id)
 #

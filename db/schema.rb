@@ -13,7 +13,17 @@
 
 ActiveRecord::Schema.define(version: 20141104212428) do
 
-  create_table "blog_articles", force: true do |t|
+  create_table "blog_comments", force: true do |t|
+    t.string   "author_name"
+    t.text     "body"
+    t.integer  "post_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "blog_comments", ["post_id"], name: "index_blog_comments_on_post_id", using: :btree
+
+  create_table "blog_posts", force: true do |t|
     t.string   "title"
     t.text     "body"
     t.string   "published_by"
@@ -22,24 +32,14 @@ ActiveRecord::Schema.define(version: 20141104212428) do
     t.datetime "updated_at"
   end
 
-  create_table "blog_comments", force: true do |t|
-    t.string   "author_name"
-    t.text     "body"
-    t.integer  "article_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "blog_comments", ["article_id"], name: "index_blog_comments_on_article_id", using: :btree
-
   create_table "blog_taggings", force: true do |t|
     t.integer  "tag_id"
-    t.integer  "article_id"
+    t.integer  "post_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "blog_taggings", ["article_id"], name: "index_blog_taggings_on_article_id", using: :btree
+  add_index "blog_taggings", ["post_id"], name: "index_blog_taggings_on_post_id", using: :btree
   add_index "blog_taggings", ["tag_id"], name: "index_blog_taggings_on_tag_id", using: :btree
 
   create_table "blog_tags", force: true do |t|

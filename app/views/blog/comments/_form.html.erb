@@ -1,5 +1,5 @@
 <h4>Leave a comment</h4>
-<%= form_for [@article, @comment ], url: blog_article_comments_path(@article) do |f| %>
+<%= form_for [@post, @comment ], url: blog_post_comments_path(@post) do |f| %>
   <%= f.text_field :author_name,
         class: 'span5',
         placeholder: 'Name' %>
