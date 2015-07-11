@@ -1,0 +1,12 @@
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: Hello World
+  body: 'This is sample post that is not published'
+  published: false
+
+two:
+  title: 'My first published post'
+  body: 'This post should be published'
+  published: true

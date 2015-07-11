@@ -1,10 +1,14 @@
 # Read about fixtures at
 # http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  tag: 
-  post: 
+tagged_ror:
+  tag: RoR
+  post: one
 
-two:
-  tag: 
-  post: 
+tagged_ruby:
+  tag: ruby
+  post: one
+
+tagged_awesome:
+  tag: awesome
+  post: two

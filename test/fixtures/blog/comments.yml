@@ -2,11 +2,11 @@
 # http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  author_name: MyString
-  body: MyText
-  post: 
+  author_name: Daffy Duck
+  body: 'Dats all folks'
+  post: one
 
 two:
-  author_name: MyString
-  body: MyText
-  post: 
+  author_name: Daisy Duck
+  body: 'Oh how I love Donald'
+  post: one

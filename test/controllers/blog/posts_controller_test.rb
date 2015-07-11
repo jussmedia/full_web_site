@@ -7,7 +7,7 @@ describe Blog::PostsController do
   it "gets index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:blog_posts)
+    assert_not_nil assigns(:blog_post)
   end
 
   it "gets new" do
@@ -20,7 +20,7 @@ describe Blog::PostsController do
       post :create, blog_post: { body: blog_post.body, published: blog_post.published, title: blog_post.title }
     end
 
-    assert_redirected_to blog_post_path(assigns(:blog_post))
+    assert_redirected_to blog_post_path(Blog::Post.all.last.id)
   end
 
   it "shows blog_post" do
@@ -35,7 +35,7 @@ describe Blog::PostsController do
 
   it "updates blog_post" do
     put :update, id: blog_post, blog_post: { body: blog_post.body, published: blog_post.published, title: blog_post.title }
-    assert_redirected_to blog_post_path(assigns(:blog_post))
+    assert_redirected_to blog_post_path(blog_post)
   end
 
   it "destroys blog_post" do

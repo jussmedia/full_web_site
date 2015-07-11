@@ -22,11 +22,11 @@
     <li>
       <div class="avatar"><a href="#"><img src="img/avatar1.jpg" width="68" height="68" alt="" /></a></div>
       <div class="comment_right">
-        <%= render partial: 'comment_info', locals: {comment: comment} %>
+        <%= render partial: 'blog/comments/comment_info', locals: {comment: comment} %>
         <%= comment.body %>
       </div>
       <div class="clear"></div>
-      <% comment.render_replies if comment.has_replies?%>
+      <% #comment.render_replies if comment.has_replies?%>
     </li>
     <% end %>
   </ol>

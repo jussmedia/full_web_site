@@ -67,6 +67,7 @@ group :test do
   # rails g minitest:install
   gem 'minitest-rails', github: 'blowmage/minitest-rails'
   gem 'minitest-spec-rails', github: 'metaskills/minitest-spec-rails'
+  gem 'minitest-reporters'
 end
 
 # Use ActiveModel has_secure_password

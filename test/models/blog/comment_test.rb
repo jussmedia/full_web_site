@@ -1,10 +1,14 @@
 require "test_helper"
 
 describe Blog::Comment do
-  let(:comment) { Blog::Comment.new }
+  let(:comment) { blog_comments :one }
 
   it "must be valid" do
     comment.must_be :valid?
+  end
+
+  it "should have a reference to post" do
+    comment.post.wont_be :nil?
   end
 end
 
@@ -18,6 +22,7 @@ end
 #  post_id     :integer
 #  created_at  :datetime
 #  updated_at  :datetime
+#  reply_to_id :integer
 #
 # Indexes
 #

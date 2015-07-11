@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141104212428) do
+ActiveRecord::Schema.define(version: 20141107213710) do
 
   create_table "blog_comments", force: true do |t|
     t.string   "author_name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20141104212428) do
     t.integer  "post_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "reply_to_id"
   end
 
   add_index "blog_comments", ["post_id"], name: "index_blog_comments_on_post_id", using: :btree

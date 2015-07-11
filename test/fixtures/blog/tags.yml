@@ -1,8 +1,14 @@
 # Read about fixtures at
 # http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  name: MyString
+ruby:
+  name: ruby
 
-two:
-  name: MyString
+rails:
+  name: rails
+
+RoR:
+  name: RoR
+
+awesome:
+  name: tag_awesome

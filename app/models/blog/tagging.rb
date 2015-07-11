@@ -16,5 +16,5 @@ end
 # Indexes
 #
 #  index_blog_taggings_on_post_id  (post_id)
-#  index_blog_taggings_on_tag_id      (tag_id)
+#  index_blog_taggings_on_tag_id   (tag_id)
 #
